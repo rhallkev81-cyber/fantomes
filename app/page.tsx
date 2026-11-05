@@ -6,12 +6,15 @@ export default function Home() {
           Fantômes
         </p>
 
-        <h1 className="mt-6 text-4xl font-bold leading-tight">
+        <h1
+          className="mt-6 text-4xl font-bold leading-tight"
+          style={{ fontFamily: "var(--font-fraunces), Georgia, serif" }}
+        >
           Débusque les abonnements que tu paies sans t&apos;en servir.
         </h1>
 
         <p className="mt-6 text-lg leading-relaxed">
-          Trois abonnements oubliés à 8 € par mois, c&apos;est{" "}
+          Par exemple, trois abonnements oubliés à 8 € par mois, c&apos;est{" "}
           <span className="font-bold text-[#B23A25]">288 € par an</span>, pour
           rien. Petits prélèvements, donc invisibles sur ton relevé.
         </p>
