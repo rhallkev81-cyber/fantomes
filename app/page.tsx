@@ -121,7 +121,7 @@ export default function Home() {
         </section>
 
         <a
-          href="#"
+          href="https://buy.stripe.com/test_3cI28q8l50Z4azN5Hn5c400"
           className="mt-10 block rounded-full bg-[#B23A25] px-6 py-4 text-center text-lg font-bold text-white shadow-lg shadow-[#B23A25]/20 transition hover:bg-[#962F1E]"
         >
           Commencer l&apos;audit
