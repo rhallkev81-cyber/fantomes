@@ -1,3 +1,6 @@
+const LIEN_PAIEMENT = "https://buy.stripe.com/test_3cI28q8l50Z4azN5Hn5c400";
+const EMAIL_CONTACT = "rhallkev81@gmail.com";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F6F0E4] text-[#1C1A17]">
@@ -13,12 +16,8 @@ export default function Home() {
         </header>
 
         <section className="mt-8">
-          <div className="inline-flex rounded-full bg-white/60 px-4 py-2 text-sm font-medium text-[#6B655B] shadow-sm">
-            Économise sur les abonnements oubliés
-          </div>
-
           <h1
-            className="mt-6 text-4xl font-bold leading-tight tracking-tight"
+            className="text-4xl font-bold leading-tight tracking-tight"
             style={{ fontFamily: "var(--font-fraunces), Georgia, serif" }}
           >
             Débusque les abonnements que tu paies sans t&apos;en servir.
@@ -27,6 +26,18 @@ export default function Home() {
           <p className="mt-6 text-lg leading-relaxed text-[#3B3630]">
             Petits prélèvements, donc invisibles sur ton relevé. Mais à la fin
             de l&apos;année, ils peuvent te coûter cher.
+          </p>
+
+          <a
+            href={LIEN_PAIEMENT}
+            className="mt-8 block rounded-full bg-[#B23A25] px-6 py-4 text-center text-lg font-bold text-white shadow-lg shadow-[#B23A25]/20 transition hover:bg-[#962F1E]"
+          >
+            Commencer l&apos;audit, 19 €
+          </a>
+
+          <p className="mt-3 text-center text-sm text-[#3B3630]">
+            Paiement unique, sans abonnement.{" "}
+            <span className="font-bold">Satisfait ou remboursé 14 jours.</span>
           </p>
         </section>
 
@@ -56,7 +67,6 @@ export default function Home() {
                 <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#B23A25] text-sm font-bold text-white">
                   1
                 </span>
-
                 <p>
                   <span className="font-bold">Tout est repéré.</span> Tu
                   déposes ton relevé, Fantômes retrouve les prélèvements qui
@@ -68,7 +78,6 @@ export default function Home() {
                 <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#B23A25] text-sm font-bold text-white">
                   2
                 </span>
-
                 <p>
                   <span className="font-bold">Classé par montant annuel.</span>{" "}
                   Les abonnements les plus coûteux remontent en premier.
@@ -79,7 +88,6 @@ export default function Home() {
                 <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#B23A25] text-sm font-bold text-white">
                   3
                 </span>
-
                 <p>
                   <span className="font-bold">
                     Lettre de résiliation prête.
@@ -101,17 +109,30 @@ export default function Home() {
 
           <p className="mt-4 leading-relaxed text-[#E8DDCC]">
             Tu paies une seule fois pour l&apos;audit complet. Pas de
-            mensualité, pas de piège, pas d&apos;engagement.
+            mensualité, pas d&apos;engagement.
           </p>
 
           <p className="mt-5 text-3xl font-bold text-white">19 €</p>
 
           <p className="mt-1 text-sm text-[#CFC2AE]">
-            Paiement unique. Audit complet.
+            Paiement unique. Liste livrée sous 24 h.
           </p>
         </section>
 
-        <section className="mt-8 rounded-3xl border border-[#E1D4C0] p-5">
+        <section className="mt-8 rounded-3xl border border-[#E1D4C0] bg-[#FFF9EE] p-5">
+          <h2 className="font-bold">Satisfait ou remboursé, 14 jours</h2>
+
+          <p className="mt-3 text-sm leading-relaxed text-[#3B3630]">
+            Pas satisfait ? Écris-nous à{" "}
+            <a className="underline" href={`mailto:${EMAIL_CONTACT}`}>
+              {EMAIL_CONTACT}
+            </a>{" "}
+            dans les 14 jours après ton paiement. Tu es remboursé sous 5 jours,
+            sans avoir à te justifier.
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-3xl border border-[#E1D4C0] p-5">
           <h2 className="font-bold">Confidentialité</h2>
 
           <p className="mt-3 text-sm leading-relaxed text-[#6B655B]">
@@ -121,14 +142,14 @@ export default function Home() {
         </section>
 
         <a
-          href="https://buy.stripe.com/test_3cI28q8l50Z4azN5Hn5c400"
+          href={LIEN_PAIEMENT}
           className="mt-10 block rounded-full bg-[#B23A25] px-6 py-4 text-center text-lg font-bold text-white shadow-lg shadow-[#B23A25]/20 transition hover:bg-[#962F1E]"
         >
-          Commencer l&apos;audit
+          Commencer l&apos;audit, 19 €
         </a>
 
         <p className="mt-3 text-center text-sm text-[#6B655B]">
-          Audit complet à 19 €, une seule fois. Pas d&apos;abonnement.
+          Paiement unique, sans abonnement. Satisfait ou remboursé 14 jours.
         </p>
       </div>
     </main>
